@@ -11,7 +11,8 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private TextView cnt;
-
+    public int like;
+    public int dislike;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,10 +21,12 @@ public class MainActivity extends AppCompatActivity {
     public void Button(View view){
     }
     public void imageButton(View view) {
-        Toast.makeText(this, "Нравится", Toast.LENGTH_SHORT).show();
+        like= like+1;
+        Toast.makeText(this, "Нравится "+like+" раз", Toast.LENGTH_SHORT).show();
     }
     public void imageButton2(View view) {
-        Toast.makeText(this, "Не нравится", Toast.LENGTH_SHORT).show();
+        dislike= dislike+1;
+        Toast.makeText(this, "Не нравится "+dislike+" раз", Toast.LENGTH_SHORT).show();
     }
 
 }
