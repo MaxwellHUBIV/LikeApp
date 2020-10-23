@@ -1,5 +1,5 @@
 package com.example.ratingimages;
-
+//Иванов Максим
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
